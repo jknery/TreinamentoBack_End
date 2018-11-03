@@ -1,6 +1,5 @@
 package br.unifacisa.si.treinamento;
 
-import br.unifacisa.si.treinamento.controller.AlunoController;
 import br.unifacisa.si.treinamento.domains.Aluno;
 import br.unifacisa.si.treinamento.service.AlunoService;
 
@@ -23,23 +22,20 @@ public class AppMatricula implements CommandLineRunner {
 
 	public void run(String... args) throws Exception {
 		
-		AlunoController alunocontroller = new AlunoController();
-		Aluno aluno = new Aluno();
 		
-		alunocontroller.setNomeAluno();
-		alunocontroller.setMatriculaAluno();
+		//Aluno aluno = new Aluno();
 		
-		aluno.setNome(alunocontroller.getNomeAluno());
-		aluno.setMatricula(alunocontroller.getMatriculaAluno());
+		//aluno.setNome("JOSE IVO");
 		
-		alunoservice.criarAluno(aluno);
+		//aluno.setMatricula(1823080007L);
+		
+		//alunoservice.criarAluno(aluno);
+		
+		//alunoservice.listaAlunos();
 		
 		//alunoservice.deletarAluno(aluno)
-		
-		
-			
-		
-		System.out.println("ID: " + aluno.getId() + " NOME: " + aluno.getNome() + " MATRICULA: " + aluno.getMatricula());
+				
+		//System.out.println("ID: " + aluno.getId() + " NOME: " + aluno.getNome() + " MATRICULA: " + aluno.getMatricula());
 		
 		
 		
